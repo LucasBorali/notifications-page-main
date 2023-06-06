@@ -1,0 +1,128 @@
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-light-grayish-blue);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+
+a:hover {
+  color: var(--Blue);
+}
+
+.container {
+  background-color: var(--White);
+  padding: 1.5rem;
+  margin: 1rem;
+  width: 70%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--Light-grayish-blue-1);
+}
+
+main {
+display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 div {
+  background-color: var(--Blue);
+  color: var(--White);
+  width: 2rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+header button {
+  color: var(--Grayish-blue);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header button:hover {
+  color: var(--Blue);
+}
+
+.notification-box {
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: var(--Dark-grayish-blue);
+}
+
+.read {
+    background-color: var(--Very-light-grayish-blue);
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+}
+
+.time {
+  margin: 3px 0;
+}
+
+img {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.message {
+  padding: 10px;
+  width: 91%;
+  margin-left: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.message:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
